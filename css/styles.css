@@ -74,6 +74,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-shadow: 0 0.5rem rgba(62, 60, 73, 0.3);
 }
 .login_page > div:nth-child(2) .card_price p {
   color: rgba(255, 254, 253, 0.8);
@@ -89,9 +90,11 @@ a {
   background-color: #FFFEFD;
   border-radius: 9px;
   padding: 2.5rem;
+  margin-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0 0.5rem rgba(62, 60, 73, 0.3);
 }
 .login_page > div:nth-child(2) form input,
 .login_page > div:nth-child(2) form button {
@@ -116,6 +119,13 @@ a {
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border: none;
+  box-shadow: 0 0.25rem 0.35rem rgba(54, 191, 132, 0.6);
+  transition: all 200ms ease-in-out;
+}
+.login_page > div:nth-child(2) form button:hover {
+  box-shadow: none;
+  background-color: #36bf84;
 }
 .login_page > div:nth-child(2) form .terms_and_condition {
   color: #b9b6d3;
