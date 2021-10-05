@@ -137,7 +137,9 @@ a {
 }
 .login_page > div:nth-child(2) form .terms_and_condition {
   color: #b9b6d3;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: normal;
   margin: 0 auto;
 }
 
@@ -181,12 +183,18 @@ a {
     height: 5.5rem;
   }
   #showcase .login_page > div:nth-child(2) form {
-    height: 27.625rem;
+    height: auto;
     width: 100%;
     padding: 1.5rem;
   }
   #showcase .login_page > div:nth-child(2) form input {
     padding: 0 1.1875rem;
+  }
+  #showcase .login_page > div:nth-child(2) form .error {
+    color: #fe7678;
+    text-align: right;
+    font-size: 0.75rem;
+    margin: -0.925rem 0 0.5rem;
   }
   #showcase .login_page > div:nth-child(2) form .terms_and_condition {
     font-size: 0.65rem;
