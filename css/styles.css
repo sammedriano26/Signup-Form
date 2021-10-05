@@ -111,7 +111,7 @@ a {
   transition: border 200ms ease;
   outline: transparent;
 }
-.login_page > div:nth-child(2) form .input:focus {
+.login_page > div:nth-child(2) form input:focus {
   border: 2px solid #6055a5;
 }
 .login_page > div:nth-child(2) form .error {
