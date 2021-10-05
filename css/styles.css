@@ -47,14 +47,14 @@ a {
 
 .login_page {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .login_page > div:first-child {
-  margin-right: 4.75rem;
+  margin-right: 5.75rem;
 }
 .login_page > div:first-child .login_section_title {
-  font-size: 2.1875rem;
+  font-size: 2.25rem;
   margin-bottom: 2.8125rem;
   font-weight: 700;
   line-height: 1.2;
@@ -85,7 +85,7 @@ a {
   font-weight: 500;
 }
 .login_page > div:nth-child(2) form {
-  height: 29.625rem;
+  height: auto;
   width: 33.75rem;
   background-color: #FFFEFD;
   border-radius: 9px;
@@ -93,7 +93,7 @@ a {
   margin-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   box-shadow: 0 0.5rem rgba(62, 60, 73, 0.3);
 }
 .login_page > div:nth-child(2) form input,
@@ -104,14 +104,22 @@ a {
   border: 1px solid #dddddd;
   border-radius: 4px;
   padding: 0 1.9375rem;
+  margin-bottom: 1.25rem;
   color: #3e3c49;
   font-size: 0.75rem;
   font-weight: 600;
   transition: border 200ms ease;
   outline: transparent;
 }
-.login_page > div:nth-child(2) form input:focus {
+.login_page > div:nth-child(2) form .input:focus {
   border: 2px solid #6055a5;
+}
+.login_page > div:nth-child(2) form .error {
+  color: #fe7678;
+  text-align: right;
+  font-size: 0.75rem;
+  margin: -0.625rem 0 1rem;
+  display: none;
 }
 .login_page > div:nth-child(2) form button {
   background-color: #38cc8c;
@@ -120,17 +128,72 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
   border: none;
-  box-shadow: 0 0.25rem 0.35rem rgba(54, 191, 132, 0.6);
+  box-shadow: 0 0.35rem #36c587;
   transition: all 200ms ease-in-out;
 }
 .login_page > div:nth-child(2) form button:hover {
   box-shadow: none;
-  background-color: #36bf84;
+  background-color: #36c587;
 }
 .login_page > div:nth-child(2) form .terms_and_condition {
   color: #b9b6d3;
   font-size: 0.75rem;
   margin: 0 auto;
+}
+
+.main_footer {
+  font-size: 0.95rem;
+  background-color: #ff7a7a;
+  color: rgba(255, 254, 253, 0.8);
+  text-align: center;
+}
+.main_footer a {
+  color: #FFFEFD;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    max-width: 23.4375rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #showcase {
+    height: 100vh;
+  }
+  #showcase .login_page {
+    flex-direction: column;
+    text-align: center;
+  }
+  #showcase .login_page > div:first-child {
+    margin: 0 0 3.3125rem;
+  }
+  #showcase .login_page > div:first-child .login_section_title {
+    font-size: 1.3125rem;
+    margin: 0 2rem 1.75rem;
+  }
+  #showcase .login_page > div:nth-child(2) .card_price {
+    width: 100%;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    padding: 0 4rem;
+    height: 5.5rem;
+  }
+  #showcase .login_page > div:nth-child(2) form {
+    height: 27.625rem;
+    width: 100%;
+    padding: 1.5rem;
+  }
+  #showcase .login_page > div:nth-child(2) form input {
+    padding: 0 1.1875rem;
+  }
+  #showcase .login_page > div:nth-child(2) form .terms_and_condition {
+    font-size: 0.65rem;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
