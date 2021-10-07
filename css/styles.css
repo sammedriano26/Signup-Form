@@ -1,3 +1,214 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #3e3c49;
+}
+
+.container {
+  max-width: 23.4375rem;
+  padding: 4.25rem 1.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  background: url("/app/images/bg-intro-mobile.png") no-repeat center center/cover;
+  height: 100%;
+  background-color: #ff7a7a;
+  color: #fffefd;
+}
+
+#showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+}
+#showcase .showcase-left-title {
+  font-size: 1.5rem;
+  margin: 0 2rem;
+  line-height: 1.4;
+  margin-bottom: 2.5rem;
+}
+#showcase .showcase-left .lead {
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 254, 253, 0.8);
+}
+#showcase .showcase-right .ad-card {
+  padding: 1.5rem 5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  background-color: #6055a5;
+  text-align: center;
+  color: rgba(255, 254, 253, 0.8);
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.8;
+  border-radius: 6px;
+  box-shadow: 0 8px 0 rgba(62, 60, 73, 0.3);
+}
+#showcase .showcase-right .ad-card span {
+  color: #fffefd;
+  font-weight: 700;
+}
+#showcase .showcase-right form {
+  background-color: #fffefd;
+  color: #3e3c49;
+  padding: 1.5rem;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0 8px 0 rgba(62, 60, 73, 0.3);
+}
+#showcase .showcase-right form .form-control {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+#showcase .showcase-right form .form-control input {
+  display: block;
+  width: 100%;
+  padding: 0.9rem;
+  border: 1.75px solid rgba(62, 60, 73, 0.3);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #3e3c49;
+  outline: none;
+  transition: border-color 250ms ease-in-out;
+}
+#showcase .showcase-right form .form-control input:focus {
+  border-color: #6055a5;
+}
+#showcase .showcase-right form .form-control.success input {
+  border-color: #38cc8c;
+}
+#showcase .showcase-right form .form-control.error input {
+  border-color: #fe7678;
+}
+#showcase .showcase-right form .form-control i {
+  position: absolute;
+  top: 35%;
+  right: 4%;
+  font-size: 1.25rem;
+  visibility: hidden;
+}
+#showcase .showcase-right form .form-control .error-msg {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  color: #fe7678;
+  font-style: italic;
+  font-weight: 500;
+  visibility: hidden;
+}
+#showcase .showcase-right form .form-control.success i.fa-check-circle {
+  color: #38cc8c;
+  visibility: visible;
+}
+#showcase .showcase-right form .form-control.error i.fa-exclamation-circle {
+  color: #fe7678;
+  visibility: visible;
+}
+#showcase .showcase-right form .form-control.error .error-msg {
+  visibility: visible;
+  color: #fe7678;
+}
+#showcase .showcase-right form .form-control.error {
+  margin-bottom: 2rem;
+}
+#showcase .showcase-right form button[type=submit] {
+  display: inline-block;
+  padding: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #38cc8c;
+  color: #fffefd;
+  box-shadow: 0 3px 0 #2ca26f;
+  text-transform: uppercase;
+}
+#showcase .showcase-right form .terms {
+  font-size: 0.75rem;
+  color: rgba(62, 60, 73, 0.4);
+  margin: 1rem 0.5rem;
+  text-align: center;
+}
+#showcase .showcase-right form .terms .highlight {
+  color: #ff7a7a;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #ff7a7a;
+  font-size: 0.85rem;
+  color: rgba(255, 254, 253, 0.8);
+  padding: 0 2.75rem;
+  margin: 0;
+  text-align: center;
+}
+footer a {
+  color: #fffefd;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 90rem;
+    padding: 0 10rem;
+  }
+
+  header {
+    background: url("/app/images/bg-intro-desktop.png") no-repeat center center/cover;
+    background-color: #ff7a7a;
+  }
+
+  #showcase {
+    flex-direction: row;
+    height: 100vh;
+    text-align: left;
+  }
+  #showcase .showcase-left {
+    width: 33.75rem;
+    margin-right: 4.8125rem;
+  }
+  #showcase .showcase-left-title {
+    margin: 0 0 2.5rem 0;
+    font-size: 2.5rem;
+  }
+  #showcase .showcase-right {
+    width: 33.75rem;
+  }
+  #showcase .showcase-right .ad-card {
+    padding: 1.625rem 0 1.4375rem;
+  }
+  #showcase .showcase-right form {
+    padding: 2.5rem;
+  }
+  #showcase .showcase-right form .form-control input {
+    padding: 1.375rem 1.9rem;
+    font-weight: 600;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
