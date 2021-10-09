@@ -25,7 +25,7 @@ a {
 }
 
 header {
-  background: url("images/bg-intro-mobile.png") no-repeat center center/cover;
+  background: url(../images/bg-intro-mobile.png) no-repeat center center/cover;
   height: 100%;
   background-color: #ff7a7a;
   color: #fffefd;
@@ -185,7 +185,7 @@ footer a {
   }
 
   header {
-    background: url("images/bg-intro-desktop.png") no-repeat center center/cover;
+    background: url(../images/bg-intro-desktop.png) no-repeat center center/cover;
     background-color: #ff7a7a;
   }
 
